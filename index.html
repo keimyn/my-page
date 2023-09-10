@@ -21,7 +21,6 @@
         }
 
         .mytitle {
-            background-color: green;
             color: white;
             height: 250px;
             display: flex;
@@ -32,8 +31,6 @@
             background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
             background-position: center;
             background-size: cover;
-
-
 
         }
 
@@ -70,17 +67,21 @@
 
         }
 
-.mybtn{
-    display: flex;
+        .mybtn {
+            display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             margin-top: 20px
+        }
 
-}
-.mybtn > button{
-    margin-right: 10px;
-}
+        .mybtn>button {
+            margin-right: 10px;
+        }
+        .input-group-text{
+
+        }
+
 
     </style>
 
@@ -89,88 +90,101 @@
 </head>
 
 <body>
-    <div=class="mytitle">
+    <div class="mytitle">
         <h1>
             내 생에 최고의 영화들
         </h1>
         <button>
             영화 기록하기
         </button>
-        </div>
-        <div class="mypost">
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">영화URL</label>
-            </div>
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                <label for="floatingTextarea">코멘트</label>
-            </div>
-            <div class="mybtn">
-                <button type="button" class="btn btn-dark">기록하기</button>
-                <button type="button" class="btn btn-outline-dark">닫기</button>
-
-
-
-            </div>
-
-
+    </div>
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">영화URL</label>
         </div>
 
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">별점</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>--선택하기--</option>
+              <option value="1">⭐</option>
+              <option value="2">⭐⭐</option>
+              <option value="3">⭐⭐⭐</option>
+            </select>
+          </div>
+          
 
-        <div class="mycards">
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
-                            class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">영화 제목이 들어갑니다.</h5>
-                            <p class="card-text">여기에 코멘트가 들어갑니다.</p>
-                            <p>⭐⭐⭐</p>
-                            <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠!</p>
-                        </div>
+
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label for="floatingTextarea">코멘트</label>
+        </div>
+        <div class="mybtn">
+            <button type="button" class="btn btn-dark">기록하기</button>
+            <button type="button" class="btn btn-outline-dark">닫기</button>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
                     </div>
                 </div>
             </div>
-
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">영화 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기에 나의 의견을 쓰면 되겠죠</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+    </div>
 
 
 
